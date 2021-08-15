@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #fff;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  /* padding: 7%; */
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  /* padding-right: 10%;
+  padding-left: 10%;
+  height: 320px; */
+  text-align: left;
+}
+
+img {
+  width: 320px;
+  height: 320px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  /* height: 320px; */
+}
+
+.hero-info h1 {
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  margin: 28.8px 0px;
+}
+
+.hero-info p {
+  margin: 28.8px 0px;
+  font-size: 2rem;
+}
+
+.action a {
+  text-decoration: none;
+  padding: 16px 24px;
+  margin: 9.6px 12.8px;
+  background-color: rgb(39, 145, 101);
+  border-radius: 2rem;
+  color: aliceblue;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.content {
+  margin: 0 5%;
+}
+
+.home .content h2 {
+  font-size: 3.0rem;
+  margin: 10px;
+}
+
+.home .content a {
+  font-size: 1.8rem;
+  color: rgb(46, 134, 105);
+  text-decoration: none;
+}
+
+.home .content li {
+  margin: 10px 2%;
+}
+
+@media screen and (min-width:369px) and (max-width: 958px){
+  /* .home {
+    padding: 18% 0 10% 0;
+  } */
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    /* padding: 10% 10%; */
+    margin: 40px;
+    text-align: center;
+  }
+
+  img {
+    width: 240px;
+    height: 240px;
+    margin: 44px;
+  }
+
+}
+
+/* @media screen and (max-width:368) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 10% 10%;
+    margin: 40px;
+    text-align: center;
+    background-color: rgb(116, 51, 51);
+  }
+
+  img {
+    width: 210px;
+    height: 210px;
+    margin: 44px;
+  }
+
+  .action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+} */
