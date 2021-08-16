@@ -13,7 +13,6 @@ body {
 }
 
 .navbar {
-  /* z-index: 0; */
   width: 100%;
   position: fixed;
 }
@@ -22,7 +21,6 @@ body {
   padding: 11.2px 24px;
   height: 60px;
   width: 100%;
-  /* z-index: 1; */
   background-color: rgba(255, 255, 255, 0.932);
   display:flex;/*Flex布局*/
   align-content: center;
@@ -37,7 +35,26 @@ body {
 }
 
 .right-nav span {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+.right-nav a {
+  text-decoration: none;
+}
+
+.rotate {
+  width: 5px;
+  height: 5px;
+  margin: 0;
+  border-top: 2px solid #000; /* 箭头颜色 */
+  border-right: 2px solid #000; /* 箭头颜色 */
+  transform: rotate(135deg);
+  transition: all 0.5s ease 0s;/*all是所有属性都将获得动画效果  0.5秒完成动画 ease(逐渐变慢)*/
+}
+
+.rotate:hover {
+  cursor: pointer;
+  transform: rotate(315deg);/*旋转180度 */
 }
 
 .navbar .header a {
@@ -146,10 +163,7 @@ img {
   color: rgb(116, 189, 116);
 }
 
-@media screen and (min-width:369px) and (max-width: 958px){
-  /* .home {
-    padding: 18% 0 10% 0;
-  } */
+@media screen and  (max-width: 958px){
 
   
   
