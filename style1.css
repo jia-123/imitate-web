@@ -12,10 +12,53 @@ body {
   background-color: #fff;
 }
 
+.navbar {
+  /* z-index: 0; */
+  width: 100%;
+  position: fixed;
+}
+
+.header {
+  padding: 11.2px 24px;
+  height: 60px;
+  width: 100%;
+  /* z-index: 1; */
+  background-color: rgba(255, 255, 255, 0.932);
+  display:flex;/*Flex布局*/
+  align-content: center;
+  align-items:center;/*指定垂直居中*/
+  border-bottom: 1px solid rgb(134, 130, 130, 0.6);
+}
+
+ .right-nav {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+}
+
+.right-nav span {
+  margin-right: 10px;
+}
+
+.navbar .header a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .header img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 13px 0 0;
+}
+
+
+
 .home {
   display: flex;
   flex-direction: column;
-  /* padding: 7%; */
+  padding: 7%;
+  /* margin: 0px 253.2px;
+  padding: 57.6px 32px 0px; */
 }
 
 .hero {
@@ -65,10 +108,11 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .content {
-  margin: 0 5%;
+  padding: 0px 0px 24px;
 }
 
 .home .content h2 {
@@ -86,10 +130,28 @@ img {
   margin: 10px 2%;
 }
 
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 12px 30px;
+  font-size: 15px;
+  border-top: 1px solid rgb(190, 189, 186);
+}
+
+.footer-content .record a {
+  text-decoration: none;
+  color: rgb(116, 189, 116);
+}
+
 @media screen and (min-width:369px) and (max-width: 958px){
   /* .home {
     padding: 18% 0 10% 0;
   } */
+
+  
   
   .hero {
     display: flex;
