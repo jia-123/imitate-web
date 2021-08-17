@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 html {
@@ -22,13 +22,13 @@ body {
   height: 60px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.932);
-  display:flex;/*Flex布局*/
+  display: flex; /*Flex布局*/
   align-content: center;
-  align-items:center;/*指定垂直居中*/
+  align-items: center; /*指定垂直居中*/
   border-bottom: 1px solid rgb(134, 130, 130, 0.6);
 }
 
- .right-nav {
+.right-nav {
   position: absolute;
   right: 10px;
   font-size: 18px;
@@ -43,18 +43,19 @@ body {
 }
 
 .rotate {
+  display: inline-block;
   width: 5px;
   height: 5px;
   margin: 0;
   border-top: 2px solid #000; /* 箭头颜色 */
   border-right: 2px solid #000; /* 箭头颜色 */
   transform: rotate(135deg);
-  transition: all 0.5s ease 0s;/*all是所有属性都将获得动画效果  0.5秒完成动画 ease(逐渐变慢)*/
+  transition: all 0.5s ease 0s; /*all是所有属性都将获得动画效果  0.5秒完成动画 ease(逐渐变慢)*/
 }
 
 .rotate:hover {
   cursor: pointer;
-  transform: rotate(315deg);/*旋转180度 */
+  transform: rotate(315deg); /*旋转180度 */
 }
 
 .navbar .header a {
@@ -67,8 +68,6 @@ body {
   height: 3rem;
   margin: 0 13px 0 0;
 }
-
-
 
 .home {
   display: flex;
@@ -96,7 +95,7 @@ img {
 .hero-info {
   display: flex;
   flex-direction: column;
-  
+
   justify-content: center;
   /* height: 320px; */
 }
@@ -133,7 +132,7 @@ img {
 }
 
 .home .content h2 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   margin: 10px;
 }
 
@@ -163,10 +162,7 @@ img {
   color: rgb(116, 189, 116);
 }
 
-@media screen and  (max-width: 958px){
-
-  
-  
+@media screen and (max-width: 958px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -182,7 +178,6 @@ img {
     height: 240px;
     margin: 44px;
   }
-
 }
 
 /* @media screen and (max-width:368) {
